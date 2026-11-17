@@ -1,0 +1,22 @@
+{
+  "runtime": {
+    "control_plane_url": "http://kagent-controller.kagent.svc.cluster.local:8083",
+    "gateway_url": "http://kagent-controller.kagent.svc.cluster.local:8083",
+    "name": "memory-agent",
+    "namespace": "kagent",
+    "log_level": "info",
+    "port": 80
+  },
+  "agent": {
+    "model": {
+      "model": "stub-model",
+      "openai": {
+        "base_url": "http://127.0.0.1:18317/v1",
+        "api_format": "chatCompletions"
+      }
+    },
+    "description": "Local test copy of what kagent writes to /config/config.json",
+    "instruction": "You are a concise, helpful assistant.",
+    "stream": true
+  }
+}

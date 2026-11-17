@@ -1,0 +1,6 @@
+# The image installs its own dependencies from the lock file.
+**/node_modules
+.git
+.idea
+.DS_Store
+test
