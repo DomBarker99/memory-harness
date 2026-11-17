@@ -37,6 +37,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       # kagent only accepts an image pinned by digest. This is the line to copy
-      # into the Harness (agents/memory-harness.yaml in the GitOps repo).
+      # into the Harness (kagent-resources/harnesses/memory-harness.yaml in the GitOps repo).
       - name: Print the digest for the Harness
         run: echo "${IMAGE}@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
